@@ -1,0 +1,26 @@
+{
+  "name": "narutoverse",
+  "version": "1.0.0",
+  "description": "Naruto Universe",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavesh-chaudhari/narutoverse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhavesh-chaudhari/narutoverse/issues"
+  },
+  "homepage": "https://github.com/bhavesh-chaudhari/narutoverse#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.46.0"
+  }
+}

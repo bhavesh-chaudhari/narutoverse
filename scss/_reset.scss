@@ -14,3 +14,11 @@ html, body{
 a{
     text-decoration: none;
 }
+
+img{
+    filter: grayscale(100%);
+}
+
+hr{
+    color: $primary-500;
+}

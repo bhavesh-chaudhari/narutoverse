@@ -1,0 +1,53 @@
+.desc-container {
+  @include flexCenter();
+  margin: 3rem 0;
+  flex-direction: column;
+  .heading {
+    margin-bottom: 2rem;
+    h1 {
+      @include heading(3rem);
+      font-weight: 400;
+      color: $primary-900;
+      border-bottom: 2px solid $primary-300;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .desc-content {
+    width: 70%;
+    .content-heading {
+      display: flex;
+      margin-bottom: 1rem;
+      h2 {
+        @include heading(2rem);
+        color: $primary-700;
+      }
+    }
+    .desc-image {
+      margin: 1.5rem 0;
+      width: 100%;
+      @include flexCenter();
+      flex-direction: column;
+      text-align: center;
+      img {
+        width: 60%;
+        border-radius: 10px;
+      }
+      &::after {
+        content: "Naruto World Map";
+        font-family: "Poppins", sans-serif;
+        margin-top: 10px;
+        width: 100%;
+        color: $primary-500;
+        text-transform: uppercase;
+        text-decoration: underline dotted 2px $primary-400;
+      }
+    }
+    .content-para{
+        p{
+            @include heading(1rem);
+            margin-bottom: 0.7rem;
+        }
+    }
+  }
+}

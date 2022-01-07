@@ -25,6 +25,7 @@
       color: $primary-50;
       margin: 1.5rem 0;
       width: 70%;
+      box-shadow: $primary-600 0px 5px 15px;
       span{
         display: block;
         transform: skew(-12deg);
@@ -83,7 +84,7 @@
     .hero-desc{
       margin-left: -5rem;
       width: 60%;
-      justify-content: flex-end;
+      min-height: 500px;
       p{
         @include heading(1rem);
         text-align: center;

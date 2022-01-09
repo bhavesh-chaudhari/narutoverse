@@ -9,6 +9,7 @@
       @include flexCenter();
       font-weight: 400;
       border-bottom: 3px solid $primary-600;
+      color: $primary-500;
       span {
         font-weight: 200;
       }
@@ -29,7 +30,6 @@
         width: 100%;
         margin-bottom: 1rem;
         border-radius: 5px;
-        filter: grayscale(100%);
         transition: all 0.5s ease;
         cursor: pointer;
         &:hover{

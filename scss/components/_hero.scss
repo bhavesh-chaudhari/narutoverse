@@ -1,6 +1,7 @@
 .hero-container {
   @include flexCenter();
-  height: 100vh
+  height: 100vh;
+  background: black;
 }
 
 .hero-content {
@@ -12,26 +13,32 @@
     height: 100%;
     @include flexCenter();
     flex-direction: column;
-    p{
-        @include heading((1.2rem));
-        color: $primary-600;
-      }
-    .brand{
+    p {
+      @include heading((1.2rem));
+      color: $primary-600;
+      background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .brand {
       padding: 2rem;
       background: $primary-900;
       @include heading(3rem);
       transform: skew(12deg);
       border-radius: 10px;
-      color: $primary-50;
       margin: 1.5rem 0;
       width: 70%;
-      box-shadow: $primary-600 0px 5px 15px;
+      box-shadow: #ff4e00 0px 5px 15px;
       position: relative;
-      span{
+      background-color: #ff4e00;
+      background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+      color: white;
+      span {
         display: block;
         transform: skew(-12deg);
       }
-      &:nth-of-type(2){
+      &:nth-of-type(2) {
         margin-left: 8rem;
       }
     }
@@ -57,21 +64,20 @@
   }
 }
 
-
-@media screen and (max-width:1250px) {
-  .hero-content{
-    .hero-desc{
-      .brand{
-        @include heading(2rem)
+@media screen and (max-width: 1250px) {
+  .hero-content {
+    .hero-desc {
+      .brand {
+        @include heading(2rem);
       }
     }
   }
 }
 
 @media screen and (max-width: 900px) {
-  .hero-content{
-    .hero-desc{
-      .brand{
+  .hero-content {
+    .hero-desc {
+      .brand {
         @include heading(1.5rem);
         width: 88%;
       }
@@ -80,17 +86,17 @@
 }
 
 @media screen and (max-width: 700px) {
-  .hero-content{
+  .hero-content {
     flex-direction: column;
-    .hero-desc{
+    .hero-desc {
       margin-left: -5rem;
       width: 60%;
       min-height: 500px;
-      p{
+      p {
         @include heading(1rem);
         text-align: center;
       }
-      .brand{
+      .brand {
         width: 100%;
         font-size: 1.3rem;
         min-width: 230px;

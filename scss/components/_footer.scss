@@ -1,0 +1,21 @@
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    background: black;
+    border-top: 1px solid $primary-900;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    color: white;
+    margin-top: 3rem;
+    footer{
+        span{
+            color: $primary-900;
+        }
+        a{
+            color: $primary-900;
+        }
+    }
+}

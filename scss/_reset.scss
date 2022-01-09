@@ -1,24 +1,22 @@
 // import google fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@100;200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@100;200;400;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-    background: $primary-50;
+html,
+body {
+  background: black;
+  overflow: auto;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-img{
-    filter: grayscale(100%);
-}
-
-hr{
-    color: $primary-500;
+hr {
+  color: $primary-900;
 }

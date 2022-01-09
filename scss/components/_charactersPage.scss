@@ -1,0 +1,107 @@
+.characters-page-content {
+  font-family: "Poppins", sans-serif;
+  .characters-hero {
+    width: 100%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0.3;
+      height: 100%;
+    }
+  }
+
+  .characters-link {
+    width: 100%;
+    height: 100%;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    color: white;
+    flex-direction: column;
+    .links-heading {
+      margin-bottom: 1rem;
+      opacity: 0.9;
+      text-align: center;
+    }
+    .links-content {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $primary-900;
+        padding: 2rem;
+        margin: 1.8rem;
+        min-height: 280px;
+        min-width: 370px;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        box-shadow: rgba(243, 14, 14, 0.2) 0px 4px 10px 10px;
+        &:hover{
+            transform: scale(1.05);
+        }
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 5px;
+          margin-right: 1rem;
+        }
+        h3 {
+          color: $primary-900;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .more{
+      display: flex;
+      justify-content: center;
+      color: $primary-400;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .characters-page-content {
+    .characters-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      img {
+        position: relative;
+        width: 85%;
+        height: 300px;
+        opacity: 0.8;
+        border-radius: 5px;
+        margin-top: 1rem;
+        border: 1px solid $primary-900;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+    .characters-page-content{
+        .characters-link{
+            .links-content{
+                a{
+                    min-width: 300px;
+                    margin: 1rem;
+                    flex-direction: column;
+                    h3{
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

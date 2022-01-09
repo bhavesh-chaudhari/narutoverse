@@ -1,6 +1,6 @@
 .desc-container {
   @include flexCenter();
-  margin: 3rem 0;
+  margin: 2rem 0;
   flex-direction: column;
   .heading {
     margin-bottom: 3rem;
@@ -14,6 +14,7 @@
       background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
       -webkit-background-clip: text;
       background-clip: text;
+      z-index: 1;
       -webkit-text-fill-color: transparent;
       &::before {
         position: absolute;
@@ -30,6 +31,7 @@
   }
   .desc-content {
     width: 70%;
+    min-width: 800px;
     .content-heading {
       display: flex;
       margin-bottom: 1rem;
@@ -69,7 +71,7 @@
           font-size: 1.5rem;
           font-weight: 400;
         }
-        a{
+        a {
           color: $primary-500;
         }
       }
@@ -107,6 +109,46 @@
           margin-left: 15px;
           transform: scale(1.5);
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .desc-container {
+    .desc-content {
+      width: 85%;
+      min-width: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .desc-container {
+    .heading {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+    .desc-content {
+      .content-heading {
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+      .content-para {
+        p {
+          font-size: 1rem;
+          span {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .page-links {
+      a {
+        width: 220px;
+        font-size: 1.2rem;
       }
     }
   }

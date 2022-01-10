@@ -5,27 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
     <title>Narutoverse | Quotes</title>
   </head>
   <body>
     <div class="quotes-page">
       <div class="navbar-container">
-        <nav>
-          <div class="nav-logo">
-            <img src="/assets/logos/logo.png" alt="" />
-          </div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="/"> Home </a></li>
-              <li><a href="/characters/"> Characters </a></li>
-              <li><a href="/quotes/"> Quotes </a></li>
-              <li><a href="/villages/"> Villages </a></li>
-              <li><a href="/jutsu/"> Jutsu </a></li>
-              <li><a href="/gallery/"> Gallery </a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img src="/assets/logos/logo.png" alt="">
+        </div>
+        <div class="hamburger-btn" id="hamburger-btn">
+          <div class="hamburger"></div>
+        </div>
+        <div id="nav-links" class="nav-links hide">
+          <ul>
+            <li onclick="handleClick()" ><a href="/">
+                Home
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/characters/">
+                Characters
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/quotes/">
+                Quotes
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/villages/">
+                Villages
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/jutsu/">
+                Jutsu
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/gallery/">
+                Gallery
+              </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
       <div class="quotes-page-content">
         <!-- heading -->
@@ -204,5 +220,6 @@
     </div>
 
     <script src="../js/quotes.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>

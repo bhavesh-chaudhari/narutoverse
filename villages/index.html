@@ -1,51 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <title>Narutoverse | Villages</title>
-  </head>
-  <body>
-    <div class="villages-page">
-      <div class="navbar-container">
-        <nav>
-          <div class="nav-logo">
-            <img src="/assets/logos/logo.png" alt="" />
-          </div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="/"> Home </a></li>
-              <li><a href="/characters/"> Characters </a></li>
-              <li><a href="/quotes/"> Quotes </a></li>
-              <li><a href="/villages/"> Villages </a></li>
-              <li><a href="/jutsu/"> Jutsu </a></li>
-              <li><a href="/gallery/"> Gallery </a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
 
-      <div class="villages-page-content">
-        <!-- heading -->
-        <div class="desc-container">
-          <div class="heading">
-            <h1>Villages</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+  <title>Narutoverse | Villages</title>
+</head>
+
+<body>
+  <div class="characters-page">
+    <!-- navbar -->
+   <div class="navbar-container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img src="/assets/logos/logo.png" alt="">
+        </div>
+        <div class="hamburger-btn" id="hamburger-btn">
+          <div class="hamburger"></div>
+        </div>
+        <div id="nav-links" class="nav-links hide">
+          <ul>
+            <li onclick="handleClick()" ><a href="/">
+                Home
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/characters/">
+                Characters
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/quotes/">
+                Quotes
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/villages/">
+                Villages
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/jutsu/">
+                Jutsu
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/gallery/">
+                Gallery
+              </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="characters-page-content">
+      <!-- heading -->
+      <div class="desc-container">
+        <div class="heading">
+          <h1>Villages</h1>
+        </div>
+
+        <div class="desc-content">
+          <div class="content-heading">
+            <h2>Shinobi villages</h2>
           </div>
+          <div class="content-para">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel beatae laborum sunt blanditiis exercitationem magni quas fugiat, ipsa quaerat ex cupiditate officia officiis doloribus aliquam quae odio impedit error? Assumenda.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptas nulla accusantium sequi consequuntur natus dignissimos iure cum repellendus suscipit, quod eius numquam ut. Omnis excepturi officia voluptas iusto maxime?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate magni numquam, eius at dignissimos assumenda expedita. Magnam, quaerat rerum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde consequuntur autem nemo totam, esse accusantium omnis ab eos eligendi eum.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, animi nesciunt tempore illum quidem necessitatibus doloremque hic illo aspernatur rem quia voluptatibus inventore minima quam itaque non culpa ipsa eius!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat porro eaque qui omnis est unde. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda magnam debitis necessitatibus doloribus repellat eveniet hic iste quam! At voluptas quasi accusantium eaque ratione sint cumque vero ipsam itaque molestiae!
+            </p>
+          </div>
+
         </div>
 
         <!-- page hero -->
+        <div class="characters-hero">
+          <img src="../assets/images/gallery/villages-hero1.png" alt="">
+        </div>
 
         <!-- page content -->
+        <div class="characters-link">
+          <div class="links-heading">
+            <h2>Available Villages</h2>
+          </div>
+          <div class="links-content">
+            <a href="./konohagakure/">
+              <img src="/assets/images/gallery/Konohagakure.jpg" alt="Naruto">
+              <h3>Konohagakure</h3>
+            </a>
+
+            <a href="./iwagakure/">
+              <img src="/assets/images/gallery/iwagakure.jpg" alt="Sasuke">
+              <h3>Iwagakure</h3>
+            </a>
+
+            <a href="./kirigakure/">
+              <img src="/assets/images/gallery/kirigakure.jpg" alt="Sakura">
+              <h3>Kirigakure</h3>
+            </a>
+
+            <a href="./sunagakure/">
+              <img src="/assets/images/gallery/sunagakure.jpg" alt="Kakashi">
+              <h3>Sunagakure</h3>
+            </a>
+
+            <a href="./kumogakure/">
+              <img src="/assets/images/gallery/kumogakure.jpg" alt="Jiraiya">
+              <h3>Kumogakure</h3>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="more">
+          <h3>More coming soon...</h3>
+        </div>
+
       </div>
 
+      <!-- footer -->
       <div class="footer-container">
         <footer>
-          Made with <span>&#10084;</span> by
-          <a href="https://github.com/bhavesh-chaudhari"> Bhavesh Chaudhari </a>
+          Made with <span>&#10084;</span> by <a href="https://github.com/bhavesh-chaudhari" target="_blank">
+            Bhavesh Chaudhari
+          </a>
         </footer>
       </div>
+
     </div>
-  </body>
+
+    <script src="../js/navbar.js"></script>
+
+</body>
+
 </html>

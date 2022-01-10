@@ -14,7 +14,7 @@
     @include flexCenter();
     flex-direction: column;
     p {
-      @include heading((1.2rem));
+      @include heading((1.4rem));
       color: $primary-600;
       background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
       -webkit-background-clip: text;
@@ -92,6 +92,7 @@
       margin-left: -5rem;
       width: 60%;
       min-height: 500px;
+      transform: translate(0, 20%);
       p {
         @include heading(1rem);
         text-align: center;

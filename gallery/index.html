@@ -4,34 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css" />
     <title>Narutoverse | Gallery</title>
   </head>
   <body>
 
     <div class="navbar-container">
-      <nav>
+      <nav class="navbar">
         <div class="nav-logo">
           <img src="/assets/logos/logo.png" alt="">
         </div>
-        <div class="nav-links">
+        <div class="hamburger-btn" id="hamburger-btn">
+          <div class="hamburger"></div>
+        </div>
+        <div id="nav-links" class="nav-links hide">
           <ul>
-            <li><a href="/">
+            <li onclick="handleClick()" ><a href="/">
                 Home
               </a></li>
-            <li><a href="/characters/">
+            <li onclick="handleClick()"  ><a href="/characters/">
                 Characters
               </a></li>
-            <li><a href="/quotes/">
+            <li onclick="handleClick()"  ><a href="/quotes/">
                 Quotes
               </a></li>
-            <li><a href="/villages/">
+            <li onclick="handleClick()"  ><a href="/villages/">
                 Villages
               </a></li>
-            <li><a href="/jutsu/">
+            <li onclick="handleClick()"  ><a href="/jutsu/">
                 Jutsu
               </a></li>
-            <li><a href="/gallery/">
+            <li onclick="handleClick()"  ><a href="/gallery/">
                 Gallery
               </a></li>
           </ul>
@@ -51,6 +55,8 @@
           <img src="../assets/images/gallery/akatsuki1.jpg" alt="" />
           <img src="../assets/images/gallery/naruto2.jpg" alt="" />
           <img src="../assets/images/gallery/rocklee.png" alt="" />
+          <img src="../assets/images/gallery/sakura.jpg" alt="">
+          <img src="../assets/logos/logo.png" alt="">
         </div>
         <div class="col">
           <img src="../assets/images/gallery/itachi2.jpg" alt="" />
@@ -58,6 +64,11 @@
           <img src="../assets/images/gallery/itachi1.jpg" alt="" />
           <img src="../assets/images/gallery/tobirama1.jpg" alt="" />
           <img src="../assets/images/gallery/jiraiya1.jpg" alt="" />
+          <img src="../assets/images/gallery/kirigakure.jpg" alt="">
+          <img src="../assets/images/gallery/sunagakure.jpg" alt="">
+          <img src="../assets/images/gallery/hinata2.jpg" alt="">
+          <img src="../assets/images/gallery/iwagakure.jpg" alt="">
+          <img src="../assets/images/gallery/kumogakure.jpg" alt="">
         </div>
         <div class="col">
           <img src="../assets/images/gallery/sasuke1.jpg" alt="" />
@@ -65,8 +76,15 @@
           <img src="../assets/images/gallery/kakashi1.jpg" alt="" />
           <img src="../assets/images/gallery/konohamaru1.jpg" alt="" />
           <img src="../assets/images/gallery/team7-1.jpg" alt="" />
+          <img src="../assets/images/gallery/sakura1.png" alt="">
+          <img src="../assets/images/gallery/villages-hero.jpg" alt="">
+          <img src="../assets/images/gallery/tsunade.jpg" alt="">
+          <img src="../assets/images/gallery/Konohagakure.jpg" alt="">
         </div>
       </div>
     </div>
+
+    <script src="../js/navbar.js"></script>
+
   </body>
 </html>

@@ -1,0 +1,19 @@
+.village-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    .village-image{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        img{
+            width: 70%;
+            min-width: 300px;
+            border-radius: 10px;
+            border: 2px solid $primary-900;
+        }
+    }
+}

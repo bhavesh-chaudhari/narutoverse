@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
     <title>Narutoverse | Jutsu</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="jutsu-page">
       <div class="navbar-container">
-        <nav>
-          <div class="nav-logo">
-            <img src="/assets/logos/logo.png" alt="" />
-          </div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="/"> Home </a></li>
-              <li><a href="/characters/"> Characters </a></li>
-              <li><a href="/quotes/"> Quotes </a></li>
-              <li><a href="/villages/"> Villages </a></li>
-              <li><a href="/jutsu/"> Jutsu </a></li>
-              <li><a href="/gallery/"> Gallery </a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img src="/assets/logos/logo.png" alt="">
+        </div>
+        <div class="hamburger-btn" id="hamburger-btn">
+          <div class="hamburger"></div>
+        </div>
+        <div id="nav-links" class="nav-links hide">
+          <ul>
+            <li onclick="handleClick()" ><a href="/">
+                Home
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/characters/">
+                Characters
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/quotes/">
+                Quotes
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/villages/">
+                Villages
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/jutsu/">
+                Jutsu
+              </a></li>
+            <li onclick="handleClick()"  ><a href="/gallery/">
+                Gallery
+              </a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
       <div class="jutsu-page-content">
         <!-- heading -->
@@ -35,7 +51,192 @@
           </div>
         </div>
 
-        <!-- page hero -->
+        <div class="jutsu-content">
+          <div class="hero-image">
+            <img src="/assets/images/gallery/sharingan1.gif" alt="" />
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="jutsu-desc">
+          <div class="jutsu">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/amaterasu.jpg" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Amaterasu</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu reversed">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/edo-tensei.webp" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Edo Tensei</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/gate-of-death.webp" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Gate Of Death</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu reversed">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/infinite-tsukuyomi.jpg" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Infinite Tsukuyomi</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/izanagi.webp" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Izanagi</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu reversed">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/kamui.webp" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Kamui</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/kotoamatsukami.jpg" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Kotoamatsukami</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu reversed">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/limbo.webp" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Limbo</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/mitotic-regeneration.webp" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Mitotic Regeneration</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu reversed">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/shinraTensei.webp" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Shinra Tensei</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+          <div class="jutsu">
+            <div class="jutsu-image">
+              <img src="/assets/images/jutsu/susanoo.webp" alt="">
+            </div>
+            <div class="jutsu-para">
+              <h3>Susanoo</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates odio vero facilis nam ex libero? Earum cupiditate
+                voluptate iure sapiente, laboriosam ducimus labore aspernatur
+                nisi totam modi, officiis autem facere quam quos maxime nobis!
+                Eaque non cupiditate quas obcaecati consectetur.
+              </p>
+            </div>
+          </div>
+
+        </div>
 
         <!-- page content -->
       </div>
@@ -47,5 +248,8 @@
         </footer>
       </div>
     </div>
-</body>
+
+    <script src="../js/navbar.js"></script>
+
+  </body>
 </html>

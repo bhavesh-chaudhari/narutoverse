@@ -36,28 +36,31 @@
     <hr />
 
     <div class="navbar-container">
-      <nav>
+      <nav class="navbar">
         <div class="nav-logo">
           <img src="/assets/logos/logo.png" alt="">
         </div>
-        <div class="nav-links">
+        <div class="hamburger-btn" id="hamburger-btn">
+          <div class="hamburger"></div>
+        </div>
+        <div id="nav-links" class="nav-links hide">
           <ul>
-            <li><a href="">
+            <li onclick="handleClick()" ><a href="/">
                 Home
               </a></li>
-            <li><a href="/characters/">
+            <li onclick="handleClick()"  ><a href="/characters/">
                 Characters
               </a></li>
-            <li><a href="/quotes/">
+            <li onclick="handleClick()"  ><a href="/quotes/">
                 Quotes
               </a></li>
-            <li><a href="/villages/">
+            <li onclick="handleClick()"  ><a href="/villages/">
                 Villages
               </a></li>
-            <li><a href="/jutsu/">
+            <li onclick="handleClick()"  ><a href="/jutsu/">
                 Jutsu
               </a></li>
-            <li><a href="/gallery/">
+            <li onclick="handleClick()"  ><a href="/gallery/">
                 Gallery
               </a></li>
           </ul>
@@ -131,7 +134,8 @@
           <p>
             Naruto has got epic plot, love,
             emotions, fights, friendships, betrayals and what not ! So, this was a bit of the backstory and if you
-            haven't watched it yet then i would highly recommend you to do so. Now here lies the end of this backstory before
+            haven't watched it yet then i would highly recommend you to do so. Now here lies the end of this backstory
+            before
             you get the question <b>"Can he beat goku though ?"</b>
           </p>
         </div>
@@ -195,7 +199,7 @@
 
     <div class="footer-container">
       <footer>
-        Made with <span>&#10084;</span> by <a href="https://github.com/bhavesh-chaudhari" target="_blank" >
+        Made with <span>&#10084;</span> by <a href="https://github.com/bhavesh-chaudhari" target="_blank">
           Bhavesh Chaudhari
         </a>
       </footer>
@@ -203,6 +207,7 @@
 
     <!-- scripts -->
     <script src="./js/index.js"></script>
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>

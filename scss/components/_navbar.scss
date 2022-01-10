@@ -23,8 +23,11 @@
       }
     }
     .nav-links {
+      display: flex;
       ul {
         display: flex;
+        justify-content: center;
+        align-items: center;
         list-style-type: none;
         li {
           margin-right: 1.5rem;
@@ -49,6 +52,87 @@
           }
           &:hover::after {
             width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-container {
+    position: fixed;
+    nav {
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: black;
+        box-shadow: rgba(247, 245, 245, 0.35) 0px 15px 20px;
+        border-radius: 4px;
+        width: 60vw;
+        max-width: 300px;
+        transition: all 0.5s ease;
+        ul {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 3rem;
+          margin-left: 0.625rem;
+          li{
+            margin: 1rem;
+          }
+        }
+      }
+      .hide {
+        transform: translate(100%);
+      }
+      .hamburger-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        border-radius: 3px;
+        z-index: 10000;
+        .hamburger {
+          width: 30px;
+          height: 1.8px;
+          background: $primary-900;
+          border-radius: 5px;
+          transition: all 0.5s ease-in-out;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 1.8px;
+            background: $primary-900;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            transition: all 0.5s ease-in-out;
+          }
+          &::before {
+            transform: translateY(-12px);
+          }
+          &::after {
+            transform: translateY(12px);
+          }
+        }
+      }
+      .open {
+        .hamburger {
+          transform: translateX(-8px);
+          background: transparent;
+          box-shadow: none;
+          &::before {
+            transform: rotate(45deg) translate(5px, -5px);
+          }
+          &::after {
+            transform: rotate(-45deg) translate(5px, 5px);
           }
         }
       }

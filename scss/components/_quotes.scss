@@ -1,0 +1,93 @@
+.quotes-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  .quotes-page-content {
+    width: 70%;
+    .add-quotes {
+      width: 70%;
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        input,
+        textarea {
+          min-width: 300px;
+          width: 50%;
+          border: 1px solid $primary-900;
+          background: transparent;
+          margin: 1rem 0;
+          color: white;
+          outline: none;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          border-radius: 5px;
+        }
+        label {
+          min-width: 300px;
+          text-align: center;
+          color: $primary-900;
+          font-size: 1.5rem;
+        }
+        button {
+          border: none;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          color: $primary-900;
+          background: white;
+          &:hover {
+            background: $primary-900;
+            color: white;
+          }
+        }
+      }
+    }
+    .quotes,
+    .user-quotes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .quote {
+        width: 70%;
+        margin: 1rem 0;
+        p {
+          text-align: center;
+        }
+        span {
+          text-align: center;
+          width: 100%;
+          display: block;
+          color: $primary-900;
+        }
+      }
+    }
+    hr {
+      width: 100%;
+      margin: 2rem 0;
+      opacity: 0.4;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .quotes-page {
+    .quotes-page-content {
+      .quotes,
+      .user-quotes {
+        .quote {
+          width: 100%;
+        }
+      }
+      .user-quotes{
+          margin-top: 2rem;
+      }
+    }
+  }
+}

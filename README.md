@@ -3,7 +3,7 @@
 A Place for Naruto Fans to wander 🚶‍♂️ around.
 
 
-- [Website]()
+- [Website](https://bhavesh-chaudhari.github.io/narutoverse/)
 - [Refer commits to see changes](https://github.com/bhavesh-chaudhari/narutoverse/commits/main)
 
 ## Built With 
@@ -31,7 +31,7 @@ A Place for Naruto Fans to wander 🚶‍♂️ around.
 ![image](https://user-images.githubusercontent.com/74975876/148765528-137f209f-0d13-42c2-84f3-d17170e0ad4d.png)
 |---|
 
-Checkout [website]() for more.
+Checkout [website](https://bhavesh-chaudhari.github.io/narutoverse/) for more.
 
 ## Contributions
 

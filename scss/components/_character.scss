@@ -84,10 +84,11 @@
           text-transform: uppercase;
           letter-spacing: 1px;
           text-align: center;
-          background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
+          // background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+          // -webkit-background-clip: text;
+          // background-clip: text;
+          // -webkit-text-fill-color: transparent;
+          color: #ff4e00;
         }
         tr {
           td {
